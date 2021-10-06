@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OrangeTestcase" verbose="1" parallel="tests" thread-count="5">
+	
+	<!-- <listeners>
+		<listener class-name="com.qa.utility.Reporting"></listener>
+	</listeners> -->
+
+	<test name="OrangeTest_01">
+		<parameter name="browser" value="GoogleChrome"/>
+		<parameter name="url" value="https://amazon.in/"/>
+		<classes>
+			<class name="com.qa.testscripts.TC_AmazonSearch_01" />
+		</classes>
+	</test>
+	
+</suite>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <test name="GoogleTest_02">
+		<parameter name="Browser" value="GoogleChrome"/>
+		<parameter name="Url" value="http://www.google.in"/>
+		<classes>
+			<class name="com.qa.testscripts.TC_GoogleSearchItem_01" />
+		</classes>
+	</test>
+	<test name="GoogleTest_03">
+		<parameter name="Browser" value="EdgeBrowser"/>
+		<parameter name="Url" value="http://www.google.in"/>
+		<classes>
+			<class name="com.qa.testscripts.TC_GoogleSearchItem_01" />
+		</classes>
+	</test> -->
